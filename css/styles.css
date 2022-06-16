@@ -14,8 +14,21 @@ body {
     letter-spacing: 0.03em;
 }
 .list {
+    padding: 0;
+    margin: 0;
+
     list-style: none;
 }
+
+.container {
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
 a.link {
     text-decoration: none;
     outline: none;
@@ -24,6 +37,8 @@ a.link {
     color: var(--accent-color);
 }
 .logo {
+    display: block ;
+
     color: var(--accent-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -32,6 +47,21 @@ a.link {
 }
 .logo > span {
     color: var(--title-text-color);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+
+}
+.nav {
+    display: flex;
+    align-items: center;
+
+}
+.site-nav {
+    display: flex;
+    margin-left: 93px;
 }
 .site-nav .link {
     color: var(--title-text-color);
@@ -47,6 +77,13 @@ a.link {
 .site-nav .link.current {
     color: var(--accent-color);
 }
+.site-nav .item + .item {
+    margin-left: 50px;
+}
+.site-contact {
+    display: flex;
+    margin-left: auto
+}
 .site-contact .link {
     color: var(--primary-text-color);
     font-weight: 500;
@@ -58,7 +95,15 @@ a.link {
 .site-contact .link:focus {
     color: var(--accent-color);
 }
+.site-contact .item + .item {
+    margin-left: 50px;
+}
+
 .hero-title {
+    display: block;
+    margin: 0;
+    
+
     color: var(--button-text);
     font-style: normal;
     font-weight: 900;
@@ -66,20 +111,39 @@ a.link {
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    text-align: center;
+
 }
 h2, h3 {
+    margin: 0;
+    padding: 0;
+
     color: var(--title-text-color);    
+}
+
+.feature-list {
+    display: flex;
 }
 .section-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+
+    
 }
 
 .hero button {
-    width: 200px;
-    height: 50px;
+    display: block;
+    padding: 10px 32px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    
+
+    min-width: 200px;
+
 
     background-color: var(--accent-color);
     color: var(--button-text);
