@@ -233,8 +233,12 @@ p {
     flex-wrap: wrap;
     margin-top: 50px;
     padding-bottom: 94px;
-
 }
+.work .item:not(:first-child) {
+    margin-left: var(--feature-gap);
+}
+
+
 .team > .item {
     margin-left: var(--feature-gap);
 
