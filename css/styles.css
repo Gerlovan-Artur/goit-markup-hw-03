@@ -194,6 +194,7 @@ p {
 .feature-list > .item {
     flex-basis: calc(100% / 4 - var(--feature-gap));
     margin-left: var(--feature-gap);
+    min-width: 270px;
 }
 .feature-list>.item:first-child {
     margin-left: 0;
@@ -237,7 +238,9 @@ p {
 .work > .item {
     flex-basis: calc(100% / 3 - var(--feature-gap));
 
-    width: 370px;
+    min-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 .work .item:not(:first-child) {
@@ -266,6 +269,7 @@ p {
 .team > .item {
     flex-basis: calc(100% / 4 - var(--feature-gap));
     margin-left: var(--feature-gap);
+    min-width: 270px;
 
     background-color: var(--button-text);
     border-bottom-left-radius: 4px;
